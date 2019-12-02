@@ -1,26 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>My Look Book</title>
-
-<link rel="stylesheet" type="text/css" href="css/styles.css">
-
-</head>
-
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Look Book</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
 <body>
   <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav  class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">My Look Book</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" id="navbardiv">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
@@ -42,48 +38,63 @@
   <div>
     <h1>Hello Fashionistas!</h1>
     <h2>Welcome to your closet!</h2>
-    <img src="fashionista.jpg" alt= "A local image" width="600px">
-  </div>
-  <div>
-    <p>
+    <div class="center">
+    <img src="fashionista.jpg" alt= "A local image" width="600px" >
+
+    </div>
+    <p class="center">
       We are two gals with a great sense of style here to help you and your look.
       Follow the steps below to get the closet of your dreams.
     </p>
+  </div>
+  <div>
+
     <ol>
       <li>Step 1: Take pictures of all your favorite clothes</li>
       <li id="lower">Step 2: Upload the photos the your online closet</li>
-      <li id="lowest">Step 3: Let us create lookis using your clothes specifically for your preferenes</li>
+      <li id="lowest">Step 3: Let us create looks using your clothes specifically for your preferenes</li>
     </ol>
   </div>
   <h2> Fill in the form below with your details to stay up to date on all of the top trends! </h2>
-  <form>
+  <form class="form-horizontal center">
     <div class="form-group">
-      <label for="exampleInputEmail1">Email address</label>
+      <label class="control-label" for="exampleInputEmail1">Email address</label>
       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
       <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>
     <div class="form-group">
-      <label for="exampleInputPassword1">Password</label>
+      <label class="control-label" for="exampleInputPassword1">Password</label>
       <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
     </div>
     <div class="form-group form-check">
       <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      <label class="control-label" class="form-check-label" for="exampleCheck1">Check me out</label>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
   <div class="contrast">
     <h2><em>Our top trends of the week:</em></h2>
       <ol>
-        <li>Scarfs</li>
-        <li id="lower">Leather Jackets</li>
-        <li>Boots</li>
-        <li id="lower">Dark lipstick</li>
-      </ol>
+        <div class="row">
+    <div class="col-sm">
+      <li>Scarfs</li>
+    </div>
+    <div class="col-sm">
+      <li >Leather Jackets</li>
+    </div>
+    <div class="col-sm">
+      <li>Boots</li>
+    </div>
+    <div class="col-sm">
+      <li >Dark lipstick</li>
+    </div>
+  </div>
+            </ol>
   </div>
   <br>
-  <p>
+  <footer>
     Follow our progress on <a href="www.github.com">github</a>
-  </p>
+  </footer>
+  <script src="js/scripts.js"></script>
   </body>
 </html>
